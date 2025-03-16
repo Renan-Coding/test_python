@@ -14,3 +14,26 @@
 ## Procedimento de Teste
 1. Realizar uma requisição HTTP (`/Get`) para a rota `/escolas/{id}`.
 2. Validar o conteúdo retornado no corpo da resposta JSON, verificando se os dados da escola correspondem ao registrado no banco de dados.
+
+## Resultado Esperado
+- Status HTTP: 200 - OK
+- Corpo da resposta:
+```json
+{
+    "id": 1,
+    "nome": "Escola Técnica Paula Souza"
+}
+```
+
+## Resultado Obtido
+- Status HTTP: 200 - OK
+- Corpo da resposta:
+```json
+{
+    "id": 1,
+    "nome": "Escola Técnica Paula Souza"
+}
+```
+
+## Pós-condição
+&nbsp;&nbsp;Nenhuma alteração após a execução do teste.
