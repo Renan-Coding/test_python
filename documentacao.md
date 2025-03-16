@@ -10,6 +10,7 @@
 - A aplicação deve estar em execução.
 - A API estar funcionando corretamente e disponível para realizar requisições HTTP.
 - Existir uma escola cadastrada no banco de dados com o ID sendo conhecido (ex: ID = 2).
+- Ter a biblioteca Python `requests` devidamente instalada no dispositivo. 
 
 ## Procedimento de Teste
 1. Realizar uma requisição HTTP (`/Get`) para a rota `/escolas/{id}`.
