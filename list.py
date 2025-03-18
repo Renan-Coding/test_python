@@ -1,8 +1,13 @@
+import os
 import requests  # Importa a biblioteca requests para fazer chamadas HTTP
+import dotenv
 
-# URL base e token fornecidos
-base_url = 'https://two025-1a-t13-es05-api2.onrender.com/api/v1'
-token = 'g5-d07b7448e0e79b485cef47e88add553218'
+# Carrega as variáveis definidas no arquivo .env
+dotenv.load_dotenv()
+
+# URL base e token importados do .env
+base_url = os.getenv("API_KEY").strip()
+token = os.getenv("SECRET_KEY").strip()
 
 # Cabeçalhos da requisição com autenticação Bearer
 headers = {
